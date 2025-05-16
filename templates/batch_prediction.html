@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Predicción por Dataset</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3790/3790570.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="form-container">
+    <h2>Predicción por Dataset</h2>
+    <form method="post" enctype="multipart/form-data">
+        <label>Seleccione el modelo de predicción:</label>
+        <select name="modelo" required>
+            <option value="">Seleccione...</option>
+            <option value="Regresión logística">Regresión logística</option>
+            <option value="Red neuronal artificial">Red neuronal artificial</option>
+            <option value="Máquina de vector soporte">Máquina de vector soporte</option>
+            <option value="Mapa cognitivo difuso">Mapa cognitivo difuso</option>
+        </select>
+
+        <label>Subir archivo Excel (.xlsx):</label>
+        <input type="file" name="dataset" accept=".xlsx" required>
+
+        <button type="submit" class="btn">Procesar</button>
+    </form>
+</div>
+</body>
+</html>

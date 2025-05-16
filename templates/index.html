@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Predicción FGR</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3790/3790570.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Predicción de Restricción del Crecimiento Fetal (FGR)</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/3790/3790570.png" alt="Icono FGR" class="center-icon">
+        <div class="menu">
+            <a href="{{ url_for('manual_prediction') }}" class="btn">Predicción por Datos Manuales</a>
+            <a href="{{ url_for('batch_prediction') }}" class="btn">Predicción por Dataset</a>
+        </div>
+    </div>
+</body>
+</html>
